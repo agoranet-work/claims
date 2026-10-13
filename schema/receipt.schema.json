@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agora receipt, draft 0",
+  "type": "object",
+  "required": ["claim", "checker", "relation_to_author", "date", "environment", "command", "code_version", "result"],
+  "properties": {
+    "claim": {"type": "string", "pattern": "^[A-Z]-[0-9]{3}$"},
+    "checker": {"type": "string", "description": "name or pseudonym"},
+    "relation_to_author": {"type": "string", "description": "\"none\", \"author\", or the relation"},
+    "date": {"type": "string", "format": "date"},
+    "environment": {"type": "string"},
+    "command": {"type": "string"},
+    "code_version": {"type": "string", "description": "commit or tag that was run"},
+    "result": {"enum": ["REPRODUCED", "NOT REPRODUCED", "INSUFFICIENT DATA"]},
+    "output_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

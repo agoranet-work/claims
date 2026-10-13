@@ -1,0 +1,11 @@
+{
+ "claim": "A-002",
+ "checker": "Gravit Open Network Foundation",
+ "relation_to_author": "author",
+ "date": "2026-10-13",
+ "environment": "clean clone, macOS, Python 3.12",
+ "command": "make eval",
+ "code_version": "gravit-eval-pack a1f72cf",
+ "result": "REPRODUCED",
+ "notes": ""
+}
