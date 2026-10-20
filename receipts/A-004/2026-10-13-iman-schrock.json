@@ -1,0 +1,11 @@
+{
+ "claim": "A-004",
+ "checker": "Iman Schrock, EMILIA Protocol",
+ "relation_to_author": "external reviewer",
+ "date": "2026-10-13",
+ "environment": "verifier v0.6.0 and the updated SAFR adapter, Python and Rust",
+ "command": "47 golden vectors; original signed-record case against the SAFR adapter",
+ "code_version": "verifier v0.6.0",
+ "result": "REPRODUCED",
+ "notes": "All 47 golden vectors pass in Python and Rust. In the adapter, true permits Auto-Execute; false and null escalate with different decision IDs. No payment was executed. Wording approved by the reviewer on 19 Oct 2026."
+}
